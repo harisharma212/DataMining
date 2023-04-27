@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   {% load static %}
+   {% include 'head.html' %}
+   <body>
+      	{% include 'navigation.html' %}
+      	<!-- The Excel Section -->
+		<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
+		 <br><br>
+		 <h2 class="w3-wide" align="w3-center"><big>Upload the relevant file.</big></h2>
+		 <div class="w3-container w3-content w3-center w3-padding-64">
+	       <form action="/parse_file/" method="POST" enctype="multipart/form-data">
+	        {% csrf_token %}
+	         <table border="1" align="w3-center">
+	           <tr>
+	             <th width="300"><big>Upload your file here</big></th>
+	             <td align="center" width="300"><input type="file" id="myFile" name="filename"></td>
+	             <td style="background-color: blue;"><input type="submit"></td>
+	           </tr>
+	         </table>
+	       </form>		    
+		 </div>
+		</div>
+      <script src="{% static 'js/script.js' %}"></script>
+   </body>
+</html>
+
+
