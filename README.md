@@ -20,7 +20,7 @@ Initial Steps:
 	(ENV_NAME\Scripts\activate)
 
 7. Run below commandd to install required libraries.
-	"pip insstall -r requirements.txt"
+	"pip install -r requirements.txt"
 
 Running the server:
 -------------------
